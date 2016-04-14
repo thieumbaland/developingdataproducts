@@ -10,8 +10,11 @@ load("data/elia_e.RData")
 shinyUI(fluidPage(
   
   # Application title
-  titlePanel("The Belgian energy market app"),
-  
+  titlePanel("Welcome to the Belgian Energy Market app!"),
+  titlePanel(h5("Please select below whether you are an energy client or supplier. If you are a client,
+                you can view the energy (gas or electricity) across all selected municipalities for a certain sector and view
+the differences between the different municipalities. If you are a supplier, you can view and compare your market share
+                for gas and electricity with your peers.")),
   # Sidebar with a slider input for the number of bins
   sidebarLayout(
     sidebarPanel(
